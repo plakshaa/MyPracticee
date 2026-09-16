@@ -7,16 +7,24 @@ int larg(vector <int> &x) {
 int larg2(vector <int> &a) {
     int maxi = INT_MIN;
     int y = INT_MIN;
+    if (a.size() < 2) {
+        return INT_MIN;
+    }
     for (auto i: a) {
-        if ( maxi < i) {
+        if ( i > maxi){
+            y = maxi;
             maxi = i;
         }
-    }
-    for (auto j:a) {
-        if ( y < j && j< maxi) {
-            y = j;
+        else if ( y < i && i != maxi) {
+            y = i;
         }
+
     }
+    // for (auto j:a) {
+    //     if ( y < j && j< maxi) {
+    //         y = j;
+    //     }
+    // }
     return y;
 }
 int main () {
