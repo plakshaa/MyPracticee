@@ -105,7 +105,7 @@ using namespace std;
 //     return 0;
 // }
 
-int main() {
+// int main() {
   vector<int> repeated_numbers = {0,1,2,3,2,5,4,6,3,7,5,8,5,2,6,9,4,3,6,7,3,5,7,8,5,7,3,6,8,8,5,6,3,6,7,4,5};
   // int count = 0;
   // for ( auto i: repeated_numbers) {
@@ -116,18 +116,18 @@ int main() {
   //   }
   //   cout<<i<<": "<<count<<endl;
   //   count = 0;
-    unordered_map< int, int> freq;
-    for ( auto i: repeated_numbers) {
-      if ( freq.find(i) == freq.end()){
-      freq[i] = 1;
-    }
-      else {
-        freq[i] += 1;
-      }
-  }
-  for ( const auto& [key,value] : freq) {
-    cout<<key<< ": "<<value<<endl;
-  }
-}
+//     unordered_map< int, int> freq;
+//     for ( auto i: repeated_numbers) {
+//       if ( freq.find(i) == freq.end()){
+//       freq[i] = 1;
+//     }
+//       else {
+//         freq[i] += 1;
+//       }
+//   }
+//   for ( const auto& [key,value] : freq) {
+//     cout<<key<< ": "<<value<<endl;
+//   }
+// }
 
 
