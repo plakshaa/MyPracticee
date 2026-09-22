@@ -28,7 +28,8 @@ using namespace std;
     //return y;
 //}
 int lin(vector<int> &v, int a) {
-    int n = v.size();
+    int n = v.size()
+    //add new comment
     for (int i = 0; i<= n-1; i++) {
         if (v[i] == a) {
             return i;
